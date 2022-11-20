@@ -1,0 +1,58 @@
+.rounded {
+  width: 30px;
+  height: 30px;
+  margin: 8px;
+  margin-left: 0;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+  text-align: center;
+}
+
+@keyframes throb {
+  0% {
+    font-size: 20px;
+  }
+  50% {
+    font-size: 25px;
+  }
+  100% {
+    font-size: 20px;
+  }
+}
+
+@keyframes borderPulse {
+  0% {
+    border-width: 1px;
+  }
+  50% {
+    border-width: 3px;
+  }
+  100% {
+    border-width: 1px;
+  }
+}
+
+.errorMessage {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  animation: throb 3s infinite;
+}
+
+.errorInput {
+  border-color: red;
+  animation: borderPulse 3s infinite;
+}
+
+.warn {
+  width: fit-content;
+  height: 48px;
+  border-radius: 4px;
+  border-color: red;
+  color: black;
+}
+
+.warn:disabled {
+  color: lightcoral;
+}

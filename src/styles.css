@@ -1,0 +1,36 @@
+.verificationInput {
+  width: 30px;
+  height: 40px;
+  margin: 8px;
+  margin-left: 0;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.error {
+  border-color: #db433b;
+}
+
+.errorRow {
+  text-align: left;
+  min-height: 17px;
+  color: #db433b;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 13px;
+}
+
+.btn {
+  width: 92px;
+  height: 48px;
+  border-radius: 4px;
+}
+
+.btnOutlined {
+  background-color: transparent;
+}
