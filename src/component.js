@@ -14,17 +14,17 @@ function VerificationInput({
 }) {
   const MAX_LENGTH = 1;
   const inputRef = useRef();
-  const tab = useCallback((e) => {
+  const move = useCallback((e) => {
     return e.data
-      ? e.target?.nextSibling?.focus()
-      : e.target?.previousSibling?.focus();
+      ? e.target?.nextSibling?.select()
+      : e.target?.previousSibling?.select();
   }, []);
 
   useEffect(() => {
     const input = inputRef.current;
-    input.addEventListener('input', tab);
+    input.addEventListener('input', move);
 
-    return () => input.removeEventListener('input', tab);
+    return () => input.removeEventListener('input', move);
   }, [tab]);
 
   return (
