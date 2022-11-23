@@ -25,7 +25,7 @@ function VerificationInput({
     input.addEventListener('input', move);
 
     return () => input.removeEventListener('input', move);
-  }, [tab]);
+  }, [move]);
 
   return (
     <input
